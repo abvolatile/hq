@@ -527,7 +527,7 @@ ${i.message}`);window.location.href=`mailto:hqfitness@aol.com?subject=${b}&body=
     font-style: italic;
     opacity: 0.8;
   }
-`,Xg="/hq/assets/slide1-training-C2tIaN2n.jpg",Lg="/hq/assets/slide2-competition-Cv64c663.jpg",Zg="/hq/assets/slide3-coach-DyQE1zyU.jpg",wg="/hq/assets/slide4-team-2F6JrzoR.jpg",lr=[{id:1,alt:"HQ Gym - Training Floor",image:Xg},{id:2,alt:"HQ Gym - Team Competition",image:Lg},{id:3,alt:"HQ Gym - WABDL Worlds",image:Zg},{id:4,alt:"HQ Gym - Community",image:wg}],Vg=7e3;function $g(){const[i,o]=at.useState(0);at.useEffect(()=>{const r=setInterval(()=>{o(y=>(y+1)%lr.length)},Vg);return()=>clearInterval(r)},[]);const d=r=>{o(r)};return x.jsxs(Kg,{children:[x.jsx(Jg,{children:lr.map((r,y)=>x.jsx(kg,{isActive:y===i,children:x.jsx(Fg,{src:r.image,alt:r.alt})},r.id))}),x.jsxs(Wg,{children:[x.jsx(Ig,{children:"HQ isn't for everyone"}),x.jsxs(Pg,{children:["Hard work. Real results. Community."," ",x.jsx(tv,{children:"Tired of typical gym culture? Welcome home."})]}),x.jsx(ev,{onClick:()=>document.getElementById("contact")?.scrollIntoView({behavior:"smooth"}),children:"Get Started"})]}),x.jsx(lv,{children:lr.map((r,y)=>x.jsx(av,{isActive:y===i,onClick:()=>d(y),"aria-label":`Go to slide ${y+1}`},r.id))})]})}const Kg=G.section`
+`,Xg="/hq/assets/slide1-training-C2tIaN2n.jpg",Lg="/hq/assets/slide2-competition-Cv64c663.jpg",Zg="/hq/assets/slide3-coach-DyQE1zyU.jpg",wg="/hq/assets/slide4-team-2F6JrzoR.jpg",lr=[{id:1,alt:"HQ Gym - Training Floor",image:Xg},{id:2,alt:"HQ Gym - Team Competition",image:Lg},{id:3,alt:"HQ Gym - WABDL Worlds",image:Zg},{id:4,alt:"HQ Gym - Community",image:wg}],Vg=8e3;function $g(){const[i,o]=at.useState(0);at.useEffect(()=>{const r=setInterval(()=>{o(y=>(y+1)%lr.length)},Vg);return()=>clearInterval(r)},[]);const d=r=>{o(r)};return x.jsxs(Kg,{children:[x.jsx(Jg,{children:lr.map((r,y)=>x.jsx(kg,{isActive:y===i,children:x.jsx(Fg,{src:r.image,alt:r.alt})},r.id))}),x.jsxs(Wg,{children:[x.jsx(Ig,{children:"HQ isn't for everyone"}),x.jsxs(Pg,{children:["Hard work. Real results. Community."," ",x.jsx(tv,{children:"Tired of typical gym culture?"}),x.jsx(ev,{children:"Welcome home."})]}),x.jsx(lv,{onClick:()=>document.getElementById("contact")?.scrollIntoView({behavior:"smooth"}),children:"Get Started"})]}),x.jsx(av,{children:lr.map((r,y)=>x.jsx(nv,{isActive:y===i,onClick:()=>d(y),"aria-label":`Go to slide ${y+1}`},r.id))})]})}const Kg=G.section`
   position: relative;
   height: 100vh;
   min-height: 600px;
@@ -535,6 +535,11 @@ ${i.message}`);window.location.href=`mailto:hqfitness@aol.com?subject=${b}&body=
   display: flex;
   align-items: flex-end;
   /* justify-content: center; */
+
+  ${({theme:i})=>i.media.max("md")} {
+    height: 60vh; // Shorter on mobile
+    min-height: 500px;
+  }
 `,Jg=G.div`
   position: absolute;
   top: 0;
@@ -604,7 +609,11 @@ ${i.message}`);window.location.href=`mailto:hqfitness@aol.com?subject=${b}&body=
   ${({theme:i})=>i.media.max("md")} {
     display: block;
   }
-`,ev=G.button`
+`,ev=G.span`
+  ${({theme:i})=>i.media.max("sm")} {
+    display: block;
+  }
+`,lv=G.button`
   background: ${({theme:i})=>i.colors.primary};
   color: white;
   border: none;
@@ -624,7 +633,7 @@ ${i.message}`);window.location.href=`mailto:hqfitness@aol.com?subject=${b}&body=
   &:active {
     transform: translateY(0);
   }
-`,lv=G.div`
+`,av=G.div`
   position: absolute;
   bottom: ${({theme:i})=>i.tokens.space[Z.xl]}px;
   left: 50%;
@@ -632,7 +641,7 @@ ${i.message}`);window.location.href=`mailto:hqfitness@aol.com?subject=${b}&body=
   display: flex;
   gap: ${({theme:i})=>i.tokens.space[Z.sm]}px;
   z-index: 3;
-`,av=G.button`
+`,nv=G.button`
   width: 12px;
   height: 12px;
   border-radius: 50%;
@@ -645,7 +654,7 @@ ${i.message}`);window.location.href=`mailto:hqfitness@aol.com?subject=${b}&body=
   &:hover {
     transform: scale(1.2);
   }
-`;function nv(){return x.jsx(Ei,{id:"results",variant:"primary",children:x.jsxs(uv,{children:[x.jsx(iv,{children:"Results"}),x.jsx(cv,{children:`Our coach knows how to win — and he's built a track record to prove it. But success at HQ
+`;function uv(){return x.jsx(Ei,{id:"results",variant:"primary",children:x.jsxs(iv,{children:[x.jsx(cv,{children:"Results"}),x.jsx(fv,{children:`Our coach knows how to win — and he's built a track record to prove it. But success at HQ
           isn't just measured in medals and trophies.`}),x.jsxs(Qy,{columns:2,gap:"2xl",tabletColumns:1,children:[x.jsxs(Vm,{children:[x.jsx($m,{children:"Competition Success"}),x.jsx(yi,{children:`Team HQ has produced multiple world champions, WABDL Hall of Famers, 
               and enough team trophies to prove that this program works. We've been 
               featured on the cover of Powerlifting USA. Our lifters dominate across 
@@ -654,10 +663,10 @@ ${i.message}`);window.location.href=`mailto:hqfitness@aol.com?subject=${b}&body=
               meet." Turns out, winning is fun — especially when you're coached by someone who knows
               how to get you there.`})]}),x.jsxs(Vm,{children:[x.jsx($m,{children:"Real-World Strength"}),x.jsx(yi,{children:"Not everyone here competes. Some members train to recover from strokes or back injuries. Others are athletes from different sports — football players, track runners, triathletes, downhill skiers, even ballet dancers — using strength training to improve performance and prevent injury."}),x.jsx(yi,{children:`Strength training isn't just for the young. Our members prove that staying strong as
               you age keeps your body running. You're only as old as you act. Competition can drive
-              motivation, but the real goal is building a body that works for you, for life.`})]})]}),x.jsxs(fv,{children:[x.jsx(rv,{children:"About WABDL"}),x.jsx(ov,{children:"The World Association of Benchers and Deadlifters (WABDL) is a drug-tested powerlifting federation specializing in bench press, deadlift, and push-pull competitions. Our team competes at the highest level — and brings home hardware."})]})]})})}const uv=G.div`
+              motivation, but the real goal is building a body that works for you, for life.`})]})]}),x.jsxs(rv,{children:[x.jsx(ov,{children:"About WABDL"}),x.jsx(sv,{children:"The World Association of Benchers and Deadlifters (WABDL) is a drug-tested powerlifting federation specializing in bench press, deadlift, and push-pull competitions. Our team competes at the highest level — and brings home hardware."})]})]})})}const iv=G.div`
   max-width: 1200px;
   margin: 0 auto;
-`,iv=G.h2`
+`,cv=G.h2`
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: ${({theme:i})=>i.tokens.space[Z.lg]}px;
@@ -667,7 +676,7 @@ ${i.message}`);window.location.href=`mailto:hqfitness@aol.com?subject=${b}&body=
   ${({theme:i})=>i.media.min("md")} {
     font-size: 3rem;
   }
-`,cv=G.p`
+`,fv=G.p`
   font-size: 1.25rem;
   line-height: 1.7;
   text-align: center;
@@ -695,7 +704,7 @@ ${i.message}`);window.location.href=`mailto:hqfitness@aol.com?subject=${b}&body=
   &:last-child {
     margin-bottom: 0;
   }
-`,fv=G.div`
+`,rv=G.div`
   background: ${({theme:i})=>i.colors.surface};
   padding: ${({theme:i})=>i.tokens.space[Z["2xl"]]}px;
   border-radius: 8px;
@@ -703,12 +712,12 @@ ${i.message}`);window.location.href=`mailto:hqfitness@aol.com?subject=${b}&body=
   max-width: 800px;
   margin: 0 auto;
   margin-top: ${({theme:i})=>i.tokens.space[Z["2xl"]]}px;
-`,rv=G.h3`
+`,ov=G.h3`
   font-size: 1.5rem;
   font-weight: 600;
   margin-bottom: ${({theme:i})=>i.tokens.space[Z.md]}px;
   color: ${({theme:i})=>i.colors.onBg};
-`,ov=G.p`
+`,sv=G.p`
   font-size: 1rem;
   line-height: 1.7;
   color: ${({theme:i})=>i.colors.muted};
@@ -717,7 +726,7 @@ ${i.message}`);window.location.href=`mailto:hqfitness@aol.com?subject=${b}&body=
   &:last-child {
     margin-bottom: 0;
   }
-`;function sv(){return x.jsx(Ei,{id:"training",variant:"alternate",children:x.jsxs(dv,{children:[x.jsx(mv,{children:"Training at HQ"}),x.jsx(hv,{children:"HQ is a small, selective training facility where every member gets personalized programming, hands-on coaching, and constant support. Your coach is on the floor every day to guide your training."}),x.jsxs(yv,{children:[x.jsxs(ar,{children:[x.jsx(nr,{children:"How It Works"}),x.jsx(Qa,{children:`Training starts with assessment. Your coach creates a customized program tailored to
+`;function dv(){return x.jsx(Ei,{id:"training",variant:"alternate",children:x.jsxs(mv,{children:[x.jsx(hv,{children:"Training at HQ"}),x.jsx(yv,{children:"HQ is a small, selective training facility where every member gets personalized programming, hands-on coaching, and constant support. Your coach is on the floor every day to guide your training."}),x.jsxs(gv,{children:[x.jsxs(ar,{children:[x.jsx(nr,{children:"How It Works"}),x.jsx(Qa,{children:`Training starts with assessment. Your coach creates a customized program tailored to
               your goals — whether that's competition prep, strength building, or injury recovery.
               You'll get a physical training book that stays at the gym, with weeks of programmed
               workouts where you track every lift, every rep.`}),x.jsx(Qa,{children:`Your coach is on the floor during training hours, walking you through exercises,
@@ -729,10 +738,10 @@ ${i.message}`);window.location.href=`mailto:hqfitness@aol.com?subject=${b}&body=
               accountability — you'll get called out for not re-racking weights or losing focus.
               It's part of the culture.`})]}),x.jsxs(ar,{children:[x.jsx(nr,{children:"Membership"}),x.jsx(Qa,{children:"HQ is open most days of the week with flexible hours for members. Training availability varies, but many members can train throughout the day. Your coach is there to guide you through your session."}),x.jsx(Qa,{children:`Membership is selective. Your coach chooses who trains here based on attitude, work
               ethic, and fit with the gym's culture. If you're interested, reach out — we'll talk
-              about your goals and whether HQ is right for you.`})]})]})]})})}const dv=G.div`
+              about your goals and whether HQ is right for you.`})]})]})]})})}const mv=G.div`
   max-width: 1200px;
   margin: 0 auto;
-`,mv=G.h2`
+`,hv=G.h2`
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: ${({theme:i})=>i.tokens.space[Z.lg]}px;
@@ -742,7 +751,7 @@ ${i.message}`);window.location.href=`mailto:hqfitness@aol.com?subject=${b}&body=
   ${({theme:i})=>i.media.min("md")} {
     font-size: 3rem;
   }
-`,hv=G.p`
+`,yv=G.p`
   font-size: 1.25rem;
   line-height: 1.7;
   text-align: center;
@@ -751,7 +760,7 @@ ${i.message}`);window.location.href=`mailto:hqfitness@aol.com?subject=${b}&body=
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
-`,yv=G.div`
+`,gv=G.div`
   display: grid;
   gap: ${({theme:i})=>i.tokens.space[Z.xl]}px;
 
@@ -781,4 +790,4 @@ ${i.message}`);window.location.href=`mailto:hqfitness@aol.com?subject=${b}&body=
   &:last-child {
     margin-bottom: 0;
   }
-`;function gv(){return x.jsxs(x.Fragment,{children:[x.jsx(gg,{}),x.jsx($g,{}),x.jsx(Og,{}),x.jsx(sv,{}),x.jsx(nv,{}),x.jsx(jg,{}),x.jsx(rg,{})]})}const vv={light:{bg:"#FFFFFF",surface:"#F5F5F7",border:"#E0E0E3",onBg:"#1A1A1A",onSurface:"#1A1A1A",muted:"#6B6B6B",signature:"#7A0000",primary:"#6A0022",onPrimary:"#FFFFFF",accent:"#A8AEB3",onAccent:"#0A0A0A",accent2:"#5A6066",onAccent2:"#FFFFFF",link:"#6B6B6B",linkVisited:"#500000",focus:"#A8AEB3",status:{info:"#2563EB",warn:"#CA8A04",danger:"#DC2626",success:"#059669"},onStatus:"#FFFFFF"},dark:{bg:"#0A0A0A",surface:"#1A1A1A",border:"#2A2A2A",onBg:"#F5F5F5",onSurface:"#F5F5F5",muted:"#A0A0A0",signature:"#8B2222",primary:"#8B2244",onPrimary:"#FFFFFF",accent:"#A8AEB3",onAccent:"#0A0A0A",accent2:"#5A6066",onAccent2:"#FFFFFF",link:"#A0A0A0",linkVisited:"#C55566",focus:"#A8AEB3",status:{info:"#60A5FA",warn:"#FBBF24",danger:"#F87171",success:"#34D399"},onStatus:"#0A0A0A"}};cg.createRoot(document.getElementById("root")).render(x.jsx(Jm.StrictMode,{children:x.jsxs(Jy,{colorOverrides:vv,defaultColorScheme:"dark",children:[x.jsx(rh,{}),x.jsx(gv,{})]})}));
+`;function vv(){return x.jsxs(x.Fragment,{children:[x.jsx(gg,{}),x.jsx($g,{}),x.jsx(Og,{}),x.jsx(dv,{}),x.jsx(uv,{}),x.jsx(jg,{}),x.jsx(rg,{})]})}const pv={light:{bg:"#FFFFFF",surface:"#F5F5F7",border:"#E0E0E3",onBg:"#1A1A1A",onSurface:"#1A1A1A",muted:"#6B6B6B",signature:"#7A0000",primary:"#6A0022",onPrimary:"#FFFFFF",accent:"#A8AEB3",onAccent:"#0A0A0A",accent2:"#5A6066",onAccent2:"#FFFFFF",link:"#6B6B6B",linkVisited:"#500000",focus:"#A8AEB3",status:{info:"#2563EB",warn:"#CA8A04",danger:"#DC2626",success:"#059669"},onStatus:"#FFFFFF"},dark:{bg:"#0A0A0A",surface:"#1A1A1A",border:"#2A2A2A",onBg:"#F5F5F5",onSurface:"#F5F5F5",muted:"#A0A0A0",signature:"#8B2222",primary:"#8B2244",onPrimary:"#FFFFFF",accent:"#A8AEB3",onAccent:"#0A0A0A",accent2:"#5A6066",onAccent2:"#FFFFFF",link:"#A0A0A0",linkVisited:"#C55566",focus:"#A8AEB3",status:{info:"#60A5FA",warn:"#FBBF24",danger:"#F87171",success:"#34D399"},onStatus:"#0A0A0A"}};cg.createRoot(document.getElementById("root")).render(x.jsx(Jm.StrictMode,{children:x.jsxs(Jy,{colorOverrides:pv,defaultColorScheme:"dark",children:[x.jsx(rh,{}),x.jsx(vv,{})]})}));
