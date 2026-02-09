@@ -196,7 +196,7 @@ Error generating stack: `+a.message+`
 `,mg=G.p`
   font-size: 0.75rem;
   color: ${({theme:i})=>i.colors.muted};
-`,hg="/hq/assets/logo-dark-pvAi8-1N.png",yg="/hq/assets/logo-light-gsaLY7qA.png";function gg(){const i=fh(),[o,d]=at.useState(!0),[r,y]=at.useState(0),[b,C]=at.useState(!1),R=i.scheme==="dark"?hg:yg;at.useEffect(()=>{const N=()=>{const j=window.scrollY;j<10||j<r?d(!0):j>r&&j>100&&d(!1),y(j)};return window.addEventListener("scroll",N,{passive:!0}),()=>window.removeEventListener("scroll",N)},[r]);const D=N=>{const j=document.getElementById(N);j&&(j.scrollIntoView({behavior:"smooth"}),C(!1))},A=()=>C(!1);return x.jsxs(x.Fragment,{children:[x.jsxs(vg,{isVisible:o,children:[x.jsx(bg,{onClick:()=>window.scrollTo({top:0,behavior:"smooth"}),children:x.jsx("img",{src:R,alt:"HQ logo",height:"64px"})}),x.jsxs(pg,{children:[x.jsxs(Sg,{isOpen:b,children:[x.jsx(di,{onClick:()=>D("about"),children:"About"}),x.jsx(di,{onClick:()=>D("training"),children:"Training"}),x.jsx(di,{onClick:()=>D("results"),children:"Results"}),x.jsx(di,{onClick:()=>D("contact"),children:"Contact"})]}),x.jsxs(zg,{children:[x.jsx(Iy,{}),x.jsx(xg,{"aria-expanded":b,onClick:()=>C(!b),children:x.jsx(Ag,{isOpen:b})})]})]})]}),x.jsx(Tg,{isOpen:b,onClick:A})]})}const vg=G.header`
+`,hg="/hq/assets/logo-dark-pvAi8-1N.png",yg="/hq/assets/logo-light-gsaLY7qA.png";function gg(){const i=fh(),[o,d]=at.useState(!0),[r,y]=at.useState(0),[b,C]=at.useState(!1),R=i.scheme==="dark"?hg:yg;at.useEffect(()=>{const N=()=>{const j=window.scrollY;j<10||j<r?d(!0):j>r&&j>100&&d(!1),y(j)};return window.addEventListener("scroll",N,{passive:!0}),()=>window.removeEventListener("scroll",N)},[r]);const D=N=>{const j=document.getElementById(N);j&&(j.scrollIntoView({behavior:"smooth"}),C(!1))},A=()=>C(!1);return x.jsxs(x.Fragment,{children:[x.jsx(Tg,{isOpen:b,onClick:A}),x.jsxs(vg,{isVisible:o,children:[x.jsx(bg,{onClick:()=>window.scrollTo({top:0,behavior:"smooth"}),children:x.jsx("img",{src:R,alt:"HQ logo",height:"64px"})}),x.jsxs(pg,{children:[x.jsxs(Sg,{isOpen:b,children:[x.jsx(di,{onClick:()=>D("about"),children:"About"}),x.jsx(di,{onClick:()=>D("training"),children:"Training"}),x.jsx(di,{onClick:()=>D("results"),children:"Results"}),x.jsx(di,{onClick:()=>D("contact"),children:"Contact"})]}),x.jsxs(zg,{children:[x.jsx(Iy,{}),x.jsx(xg,{"aria-expanded":b,onClick:()=>C(!b),children:x.jsx(Ag,{isOpen:b})})]})]})]})]})}const vg=G.header`
   position: fixed;
   top: 0;
   left: 0;
@@ -250,7 +250,7 @@ Error generating stack: `+a.message+`
     gap: ${({theme:i})=>i.tokens.space[Z.lg]}px;
     transform: translateX(${({isOpen:i})=>i?"0":"100%"});
     transition: transform 0.3s ease-in-out;
-    z-index: 101;
+    z-index: 101; // This line - make sure it's 101 or higher
   }
 `,di=G.a`
   color: ${({theme:i})=>i.colors.link};
@@ -313,11 +313,14 @@ Error generating stack: `+a.message+`
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.9);
     opacity: ${({isOpen:i})=>i?1:0};
     pointer-events: ${({isOpen:i})=>i?"auto":"none"};
     transition: opacity 0.3s;
     z-index: 100;
+    nav a {
+      font-size: 1.2rem;
+    }
   }
 `,zg=G.div`
   display: flex;
